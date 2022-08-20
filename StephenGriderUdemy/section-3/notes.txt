@@ -1,0 +1,15 @@
+We can initialize a variable outside of a function, we just can't assign a value to it.
+
+:= should be used only while initializing a new variable
+= for assigning value to an initialized variable
+
+- Array: fixed length of things
+- Slice: an array that can grow or shrink
+
+Array and Slice should have the same data type values
+
+Slice range:
+    fruits[startIndexIncluding : upToNotIncluding]
+    fruits[:2] => from first element
+    fruits[2:] => from 2nd element to the end
+
