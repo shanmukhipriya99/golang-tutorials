@@ -1,0 +1,19 @@
+GO CLI
+
+- go build => compiles a source of go source code files
+- go run => compiles & executes one or two files
+- go fmt => formats all the code in each file in the current directory
+- go install => compiles & "installs" a package
+- go get => downloads the raw source code of someone else's package
+- go test => runs any tests associated with the current project
+
+Types of Packages:
+
+- Executable => generates a file that we can run
+- Reusable => code used as "helpers", good place to put reusable logic
+
+A package named "main" is always Executable
+and it should always have the function main
+
+A package with any other name is a Reusable package
+
