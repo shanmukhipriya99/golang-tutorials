@@ -32,7 +32,13 @@ func main() {
 	}
 	// fmt.Printf("%+v", newPerson)
 	// fmt.Println(newPerson.contact.email)
+	newPersonPointer := &newPerson
+	newPersonPointer.updateName("ABC")
 	newPerson.print()
+}
+
+func (pointerToPerson *person) updateName(newFirstName string) {
+	(*pointerToPerson).firstName = newFirstName //pass by reference
 }
 
 func (p person) print() {
