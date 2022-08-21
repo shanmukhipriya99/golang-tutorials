@@ -32,8 +32,8 @@ func main() {
 	}
 	// fmt.Printf("%+v", newPerson)
 	// fmt.Println(newPerson.contact.email)
-	newPersonPointer := &newPerson
-	newPersonPointer.updateName("ABC")
+	// newPersonPointer := &newPerson //pointer
+	newPerson.updateName("ABC") //not a pointer but still works
 	newPerson.print()
 }
 
