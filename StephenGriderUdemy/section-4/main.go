@@ -10,7 +10,7 @@ type contactInfo struct {
 type person struct {
 	firstName string
 	lastName string
-	contact contactInfo
+	contact contactInfo //just contactInfo also works
 }
 
 func main() {
@@ -30,5 +30,11 @@ func main() {
 			zip: 12345,
 			},
 	}
-	fmt.Printf("%+v", newPerson)
+	// fmt.Printf("%+v", newPerson)
+	// fmt.Println(newPerson.contact.email)
+	newPerson.print()
+}
+
+func (p person) print() {
+	fmt.Printf("%+v", p)
 }
