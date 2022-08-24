@@ -1,0 +1,2 @@
+Concurrency => We can have multiple threads executing code. If one thread blocks, another one is picked up and worked on.
+Parallelism => Multiple threads executed at the exact time. Requires multiple CPUs
